@@ -1,10 +1,10 @@
-import { Message } from "./Notification.styled";
-import PropTypes from 'prop-types'
+import css from './Notification.module.css';
+import PropTypes from 'prop-types';
 
 export const Notification = ({ message }) => (
-    <Message>{message}</Message>
+  <p className={css.noFeedback}>{message}</p>
 );
 
 Notification.propTypes = {
-    message: PropTypes.string.isRequired,
-}
+  message: PropTypes.string.isRequired,
+};
